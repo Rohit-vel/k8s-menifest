@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: testpod
+spec:
+  containers:
+    - name: container1
+      image: nginx
+      ports:
+       - containerPort: 80
+  nodeSelector:                                         
+      myname: Rohit

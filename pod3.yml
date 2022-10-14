@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: pod3
+spec:
+  containers:
+    - name: container2
+      image: httpd
+      ports:
+       - containerPort: 80
+  nodeSelector:
+       myname: Rohit
+
